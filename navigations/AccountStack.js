@@ -2,6 +2,7 @@ import React from 'react'
 import { createStackNavigator } from '@react-navigation/stack'
 import Account from '../screens/accont/Account'
 import Login from '../screens/accont/Login'
+import Register from '../screens/accont/Register'
 
 const Stack = createStackNavigator()
 
@@ -18,6 +19,12 @@ export default function AccountStack() {
             name="login"
             component={Login}
             options={{title:"Iniciar Secion"}}
+           />
+
+            <Stack.Screen
+            name="register"
+            component={Register}
+            options={{title:"Registrar Usuario"}}
            />
        </Stack.Navigator>
     )
